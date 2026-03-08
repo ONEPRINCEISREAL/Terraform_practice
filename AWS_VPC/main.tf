@@ -57,3 +57,11 @@ resource "aws_route_table_association" "public_route_table" {
     route_table_id = aws_route_table.my_route_table.id
     subnet_id = aws_subnet.public_subnet.id  
 }
+resource "aws_instance" "my_server" {
+  ami           = "ami-0f559c3642608c138"
+  instance_type = "t3.nano"
+  subnet_id = aws_subnet.public_subnet.id
+    tags = {
+        Name = "my_server"
+    }
+}
