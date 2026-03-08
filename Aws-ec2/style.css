@@ -1,0 +1,126 @@
+:root {
+    --tf-purple: #5c4ee5;
+    --tf-dark: #1e2124;
+    --success-green: #2e7d32;
+    --success-bg: #e8f5e9;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    width: 90%;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out;
+}
+
+header {
+    background-color: var(--tf-purple);
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+main {
+    padding: 32px;
+}
+
+.status-card {
+    border-left: 6px solid #4caf50;
+    background-color: var(--success-bg);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.status-card h2 {
+    margin: 0 0 10px 0;
+    color: var(--success-green);
+    font-size: 1.25rem;
+}
+
+.status-card p {
+    margin: 0;
+    color: #1b5e20;
+    font-size: 0.95rem;
+}
+
+.details {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.details h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--tf-dark);
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.details li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.label {
+    font-weight: 600;
+    color: #555;
+}
+
+.value {
+    color: #000;
+    font-family: monospace;
+    background: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Added a simple fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
