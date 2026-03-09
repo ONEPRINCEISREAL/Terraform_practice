@@ -27,3 +27,9 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+#state backup files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.env
