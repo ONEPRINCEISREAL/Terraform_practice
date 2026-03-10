@@ -1,0 +1,8 @@
+users:
+  - username: Prince
+    roles: [AmazonS3FullAccess]
+  - username: Sumit
+    roles: [AmazonS3ReadOnlyAccess]
+  - username: Daksh
+    roles: [AmazonS3ReadOnlyAccess, AmazonEC2ReadOnlyAccess]
+
